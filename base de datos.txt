@@ -1,0 +1,17 @@
+create database bdescuela;
+use bdescuela;
+
+
+create table Alumnos(
+id int not null auto_increment primary key,
+nombres nvarchar(50),
+apellidos nvarchar(50)
+);
+
+insert into Alumnos (nombres,apellidos) value ('Frank','Valencia');
+
+insert into Alumnos (nombres,apellidos) value ('Andres','Buitrago');
+select * from Alumnos;
+
+
+update Alumnos SET alumnos.nombres='Carlos',alumnos.apellidos = 'Gonzales' where Alumnos.id=1;
